@@ -11,7 +11,7 @@ Hello! I'm Xinnan Dai, a first-year PhD student at Michigan State University, un
 
 My research interests are centered around AI for Science (specifically single-cell analysis) and graph neural networks.
 
-Selected Pub
+Selected Publication [view all](https://scholar.google.com.hk/citations?user=LGKDd2AAAAAJ&hl=zh-CN)
 ======
 Dai X, Shan C, Zheng J, et al. [Biological Factor Regulatory Neural Network](https://arxiv.org/abs/2304.04982). arXiv preprint arXiv:2304.04982, 2023.
 
