@@ -14,9 +14,12 @@ My research interests include LLMs and graph reasoning, graph neural networks an
 News
 ======
 [Oct. 2024] Our paper [How Do Large Language Models Understand Graph Patterns? A Benchmark for Graph Pattern Comprehension](https://arxiv.org/abs/2410.05298) is online.
+
 [Aug. 2024] Our paper [Revisiting the Graph Reasoning Ability of Large Language Models: Case Studies in Translation, Connectivity and Shortest Path](https://arxiv.org/abs/2408.09529) is online.
+
 [Aug. 2024] Our paper [AI-powered omics-based drug pair discovery for pyroptosis therapy targeting triple-negative breast cancer](https://www.nature.com/articles/s41467-024-51980-9) got accepted by Nature Communications.
 
+[Jan. 2024] We got Accelerate Foundation Models Academic Research Initiative (AFMR) funding from Microsoft Research.
 
 <!-- Selected Publication [view all](https://scholar.google.com.hk/citations?user=LGKDd2AAAAAJ&hl=zh-CN)
 ======
