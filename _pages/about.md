@@ -9,11 +9,18 @@ redirect_from:
 ---
 Hello! I'm Xinnan Dai, a first-year PhD student at Michigan State University, under the guidance of Prof. [Jiliang Tang](https://cse.msu.edu/~tangjili/index.html). Before that, I obtained bachelor's and master's degrees at Southwest University of Science and Technology and ShanghaiTech University, respectively. I was also a research intern at Microsoft Research Asia, mentored by [Caihua Shan](https://www.microsoft.com/en-us/research/people/caihuashan/) and [Dongsheng Li](https://www.microsoft.com/en-us/research/people/dongsli/).
 
-My research interests are centered around AI for Science (specifically single-cell analysis) and graph neural networks.
+My research interests include LLMs and graph reasoning, graph neural networks and AI for Science (specifically single-cell analysis).
 
-Selected Publication [view all](https://scholar.google.com.hk/citations?user=LGKDd2AAAAAJ&hl=zh-CN)
+News
 ======
-Dai X, Shan C, Zheng J, et al. [Biological Factor Regulatory Neural Network](https://arxiv.org/abs/2304.04982). arXiv preprint arXiv:2304.04982, 2023.
+[Oct. 2024] Our paper [How Do Large Language Models Understand Graph Patterns? A Benchmark for Graph Pattern Comprehension](https://arxiv.org/abs/2410.05298) is online.
+[Aug. 2024] Our paper [Revisiting the Graph Reasoning Ability of Large Language Models: Case Studies in Translation, Connectivity and Shortest Path](https://arxiv.org/abs/2408.09529) is online.
+[Aug. 2024] Our paper [AI-powered omics-based drug pair discovery for pyroptosis therapy targeting triple-negative breast cancer](https://www.nature.com/articles/s41467-024-51980-9) got accepted by Nature Communications.
+
+
+<!-- Selected Publication [view all](https://scholar.google.com.hk/citations?user=LGKDd2AAAAAJ&hl=zh-CN)
+======
+Dai X, Shan C, Zheng J, et al. [Biological Factor Regulatory Neural Network](https://arxiv.org/abs/2304.04982). arXiv preprint arXiv:2304.04982, 2023. -->
 
 Awards
 ======
