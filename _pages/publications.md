@@ -15,8 +15,8 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %} -->
 
-Selected Publication [view all](https://scholar.google.com.hk/citations?user=LGKDd2AAAAAJ&hl=zh-CN)
-======
+## Selected Publication [view all](https://scholar.google.com.hk/citations?user=LGKDd2AAAAAJ&hl=zh-CN)
+
 
 ### LLMs for graph reasoning
 
