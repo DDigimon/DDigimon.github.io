@@ -21,7 +21,7 @@ author_profile: true
 ### LLMs for graph reasoning
 
 
-**Dai, X.**, Qu, H., Shen, Y., Zhang, B., Wen, Q., Fan, W., ... & Shan, C. (2024).  [How Do Large Language Models Understand Graph Patterns? A Benchmark for Graph Pattern Comprehension](https://arxiv.org/abs/2410.05298) arXiv preprint arXiv:2410.05298.
+**Dai, X.**, Qu, H., Shen, Y., Zhang, B., Wen, Q., Fan, W., ... & Shan, C. (2024).  [How Do Large Language Models Understand Graph Patterns? A Benchmark for Graph Pattern Comprehension](https://openreview.net/forum?id=CkKEuLmRnr) ICLR 2025.
 
 **Dai, X.**, Wen, Q., Shen, Y., Wen, H., Li, D., Tang, J., & Shan, C. (2024). [Revisiting the Graph Reasoning Ability of Large Language Models: Case Studies in Translation, Connectivity and Shortest Path](https://arxiv.org/abs/2408.09529). arXiv preprint arXiv:2408.09529.
 
