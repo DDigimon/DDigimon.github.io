@@ -13,6 +13,9 @@ My research interests include LLMs and graph reasoning, graph neural networks an
 
 News
 ======
+
+[Feb. 2025] Our paper [Exploring Graph Tasks with Pure LLMs: A Comprehensive Benchmark and Investigation](https://arxiv.org/abs/2502.18771) is online.
+
 [Feb. 2025] Our paper [How Do Large Language Models Understand Graph Patterns? A Benchmark for Graph Pattern Comprehension](https://arxiv.org/abs/2410.05298) got accepted by ICLR 2025.
 
 [Aug. 2024] Our paper [Revisiting the Graph Reasoning Ability of Large Language Models: Case Studies in Translation, Connectivity and Shortest Path](https://arxiv.org/abs/2408.09529) is online.
