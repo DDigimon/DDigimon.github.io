@@ -11,6 +11,8 @@ Hello! I'm Xinnan Dai, a second-year PhD student at Michigan State University, u
 
 My research interests include LLMs and graph reasoning, graph neural networks and AI for Science (specifically single-cell analysis).
 
+contact: daixinna[at]msu[dot]edu
+
 News
 ======
 
