@@ -9,12 +9,18 @@ redirect_from:
 ---
 Hello! I'm Xinnan Dai, a second-year PhD student at Michigan State University, under the guidance of Prof. [Jiliang Tang](https://cse.msu.edu/~tangjili/index.html). Before that, I obtained bachelor's and master's degrees at Southwest University of Science and Technology and ShanghaiTech University, respectively. I was also a research intern at Microsoft Research Asia, mentored by [Caihua Shan](https://www.microsoft.com/en-us/research/people/caihuashan/) and [Dongsheng Li](https://www.microsoft.com/en-us/research/people/dongsli/).
 
-My research interests include LLMs and graph reasoning, graph neural networks and AI for Science (specifically single-cell analysis).
+My research interests include **LLMs and graph reasoning**, graph neural networks and AI for Science (specifically single-cell analysis).
 
 contact: daixinna[at]msu[dot]edu
 
 News
 ======
+
+[Jul. 2025] Our paper [From Sequence to Structure: Uncovering Substructure Reasoning in Transformers](https://arxiv.org/abs/2507.10435) is online.
+
+[Jun. 2025] Our paper [PhysUniBench: An Undergraduate-Level Physics Reasoning Benchmark for Multimodal Models](https://arxiv.org/pdf/2506.17667) is online.
+
+[May. 2025] Our paper [Guided Structural Inference: Leveraging Priors with Soft Gating Mechanisms](https://openreview.net/forum?id=g6XtPA0DQp) got accepted by ICML 2025.
 
 [Feb. 2025] Our paper [Exploring Graph Tasks with Pure LLMs: A Comprehensive Benchmark and Investigation](https://arxiv.org/abs/2502.18771) is online.
 
