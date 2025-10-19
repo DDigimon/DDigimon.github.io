@@ -7,14 +7,18 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hello! I'm Xinnan Dai, a second-year PhD student at Michigan State University, under the guidance of Prof. [Jiliang Tang](https://cse.msu.edu/~tangjili/index.html). Before that, I obtained bachelor's and master's degrees at Southwest University of Science and Technology and ShanghaiTech University, respectively. I was also a research intern at Microsoft Research Asia, mentored by [Caihua Shan](https://www.microsoft.com/en-us/research/people/caihuashan/) and [Dongsheng Li](https://www.microsoft.com/en-us/research/people/dongsli/).
+Hello! I'm Xinnan Dai, a third-year PhD student at Michigan State University, under the guidance of Prof. [Jiliang Tang](https://cse.msu.edu/~tangjili/index.html). Before that, I obtained bachelor's and master's degrees at Southwest University of Science and Technology and ShanghaiTech University, respectively. I was also a research intern at Microsoft Research Asia, mentored by [Caihua Shan](https://www.microsoft.com/en-us/research/people/caihuashan/) and [Dongsheng Li](https://www.microsoft.com/en-us/research/people/dongsli/).
 
 My research interests include **LLMs and graph reasoning**, graph neural networks and AI for Science (specifically single-cell analysis).
+
+I'm open to any internship opportunities.
 
 contact: daixinna[at]msu[dot]edu
 
 News
 ======
+
+[Oct. 2025] Our paper [From Sequence to Structure: Uncovering Substructure Reasoning in Transformers](https://arxiv.org/abs/2507.10435) and [Uncovering Graph Reasoning in Decoder-only Transformers with Circuit Tracing](https://arxiv.org/abs/2509.20336) got accepted by Neurips 2025. See you in San Diego! (Main Conference and Efficient Reasoning Workshop)
 
 [Jul. 2025] Our paper [From Sequence to Structure: Uncovering Substructure Reasoning in Transformers](https://arxiv.org/abs/2507.10435) is online.
 
