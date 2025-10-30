@@ -17,6 +17,7 @@ contact: daixinna[at]msu[dot]edu
 
 News
 ======
+[Oct. 2025] Our Paper [GraphGhost: Tracing Structures Behind Large Language Models](https://arxiv.org/abs/2510.08613) is online.
 
 [Oct. 2025] Our paper [From Sequence to Structure: Uncovering Substructure Reasoning in Transformers](https://arxiv.org/abs/2507.10435) and [Uncovering Graph Reasoning in Decoder-only Transformers with Circuit Tracing](https://arxiv.org/abs/2509.20336) got accepted by Neurips 2025. See you in San Diego! (Main Conference and Efficient Reasoning Workshop)
 

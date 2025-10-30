@@ -305,6 +305,8 @@ tag_archive:
 
 # HTML Compression
 # - http://jch.penibelst.de/
+url: "https://ddigimon.github.io"
+og_image: "images/profile1.png"
 compress_html:
   clippings: all
   ignore:
