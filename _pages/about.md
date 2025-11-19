@@ -17,6 +17,8 @@ contact: daixinna[at]msu[dot]edu
 
 News
 ======
+[Nov. 2025] The tutorial code for exploring implicit graph structures in decoder-only transformers is now available. [Github (https://github.com/DDigimon/GraphGhost)](https://github.com/DDigimon/GraphGhost)
+
 [Oct. 2025] Our Paper [GraphGhost: Tracing Structures Behind Large Language Models](https://arxiv.org/abs/2510.08613) is online.
 
 <!-- [Oct. 2025] Our paper [GraphGhost: Tracing Structures Behind Large Language Models](https://arxiv.org/pdf/2510.08613) is online. -->
