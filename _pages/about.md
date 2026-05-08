@@ -17,6 +17,10 @@ contact: daixinna[at]msu[dot]edu
 
 News
 ======
+[Apr. 2026] Our paper [When Do Hallucinations Arise? A Graph Perspective on the Evolution of Path Reuse and Path Compression](https://arxiv.org/abs/2604.03557) got accepted by ICML 2026.
+
+[Apr. 2026] Our paper [Exploring graph tasks with pure llms: A comprehensive benchmark and investigation](https://arxiv.org/abs/2502.18771) got accepted by ACL 2026.
+
 [Nov. 2025] The tutorial code for exploring implicit graph structures in decoder-only transformers is now available. [Github (https://github.com/DDigimon/GraphGhost)](https://github.com/DDigimon/GraphGhost)
 
 [Oct. 2025] Our Paper [GraphGhost: Tracing Structures Behind Large Language Models](https://arxiv.org/abs/2510.08613) is online.

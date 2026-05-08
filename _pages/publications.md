@@ -19,6 +19,8 @@ author_profile: true
 
 ### Graph for LLMs
 
+**X Dai**, K Yang, C Luo, S Zeng, K Guo, J Tang [When Do Hallucinations Arise? A Graph Perspective on the Evolution of Path Reuse and Path Compression](https://arxiv.org/abs/2604.03557) - ICML 2026
+
 **X Dai**, K Guo, CH Lo, S Zeng, J Ding, D Luo… [GraphGhost: Tracing Structures Behind Large Language Models](https://arxiv.org/abs/2510.08613) - arXiv preprint arXiv:2510.08613, 2025
 
 **X Dai**, CH Lo, K Guo, S Zeng, D Luo, J Tang [Uncovering Graph Reasoning in Decoder-only Transformers with Circuit Tracing](https://arxiv.org/abs/2509.20336) - Efficient Reasoning Workshop, Neurips 2025 (Spotlight)
@@ -27,7 +29,7 @@ author_profile: true
 
 **X Dai\***, K Yang\*, J Revolinsky, K Guo, A Wang, B Zhang… [From sequence to structure: Uncovering substructure reasoning in transformers](https://arxiv.org/abs/2507.10435) - Neurips 2025
 
-Y Wang, **X Dai**, W Fan, Y Ma. [Exploring Graph Tasks with Pure LLMs: A Comprehensive Benchmark and Investigation](https://arxiv.org/abs/2502.18771)
+Y Wang, **X Dai**, W Fan, Y Ma. [Exploring Graph Tasks with Pure LLMs: A Comprehensive Benchmark and Investigation](https://arxiv.org/abs/2502.18771) - ACL 2026
 
 <!-- **X Dai**, H Qu, Y Shen, B Zhang, Wen, Q., Fan, W., ... & Shan, C. (2024).  [How Do Large Language Models Understand Graph Patterns? A Benchmark for Graph Pattern Comprehension](https://openreview.net/forum?id=CkKEuLmRnr) ICLR 2025. -->
 
