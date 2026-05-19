@@ -23,6 +23,8 @@ author_profile: true
 
 **X Dai**, K Guo, CH Lo, S Zeng, J Ding, D Luo… [GraphGhost: Tracing Structures Behind Large Language Models](https://arxiv.org/abs/2510.08613) - arXiv preprint arXiv:2510.08613, 2025
 
+K Guo, **X Dai**, Z Zhang, N Lin, S Zeng, J Ren… [Why Retrieval-Augmented Generation Fails: A Graph Perspective](https://arxiv.org/abs/2605.14192) - KDD 2026
+
 **X Dai**, CH Lo, K Guo, S Zeng, D Luo, J Tang [Uncovering Graph Reasoning in Decoder-only Transformers with Circuit Tracing](https://arxiv.org/abs/2509.20336) - Efficient Reasoning Workshop, Neurips 2025 (Spotlight)
 
 ### LLMs for graph reasoning

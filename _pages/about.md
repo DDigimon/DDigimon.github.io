@@ -17,6 +17,8 @@ contact: daixinna[at]msu[dot]edu
 
 News
 ======
+[May. 2026] Our paper [Why Retrieval-Augmented Generation Fails: A Graph Perspective](https://arxiv.org/abs/2605.14192) got accepted by KDD 2026
+
 [Apr. 2026] Our paper [When Do Hallucinations Arise? A Graph Perspective on the Evolution of Path Reuse and Path Compression](https://arxiv.org/abs/2604.03557) got accepted by ICML 2026.
 
 [Apr. 2026] Our paper [Exploring graph tasks with pure llms: A comprehensive benchmark and investigation](https://arxiv.org/abs/2502.18771) got accepted by ACL 2026.
