@@ -1,0 +1,68 @@
+/* Workshop navigation and directory; the standalone workshop has its own CSS. */
+.greedy-nav .masthead__dropdown {
+  position: relative;
+
+  summary {
+    display: block;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+    color: $masthead-link-color;
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker { display: none; }
+    &:hover { color: $masthead-link-color-hover; }
+    &:focus-visible { outline: 2px solid $primary-color; outline-offset: 4px; }
+    span { margin-left: 0.2em; font-size: 0.7em; }
+  }
+
+  .masthead__dropdown-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 290px;
+    padding: 0.4em 0;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background: $background-color;
+    box-shadow: $box-shadow;
+    z-index: 30;
+
+    a {
+      margin: 0;
+      padding: 0.65em 1em;
+      font-size: $type-size-6;
+      font-weight: normal;
+      white-space: normal;
+
+      &::before { display: none; }
+      &:hover, &:focus { background: $lighter-gray; }
+    }
+  }
+}
+
+.greedy-nav .hidden-links {
+  max-width: calc(100vw - 2rem);
+
+  .masthead__dropdown summary { margin: 0; padding: 10px 20px; font-size: $type-size-5; }
+  .masthead__dropdown-links {
+    position: static;
+    min-width: 0;
+    max-width: 290px;
+    border: 0;
+    box-shadow: none;
+    a { padding-left: 28px; }
+  }
+}
+
+.workshop-directory__item {
+  padding: 1em 0;
+  border-bottom: 1px solid $border-color;
+  h2 { margin-top: 0.3em; }
+}
+
+.workshop-directory__venue {
+  margin-bottom: 0;
+  color: $gray;
+  font-size: $type-size-6;
+}

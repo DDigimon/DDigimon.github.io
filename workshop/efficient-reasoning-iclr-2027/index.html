@@ -1,0 +1,183 @@
+---
+layout: null
+title: "Efficient Reasoning, ICLR 2027"
+description: "The proposed Third Workshop on Efficient Reasoning at ICLR 2027: from model design to agent applications."
+permalink: /workshop/efficient-reasoning-iclr-2027/
+---
+{% assign workshop = site.data.efficient_reasoning_iclr_2027 %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta name="theme-color" content="#14283c">
+  <title>{{ page.title }} | Workshop</title>
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/efficient-reasoning-workshop.css' | relative_url }}">
+  <script defer src="{{ '/assets/js/efficient-reasoning-workshop.js' | relative_url }}"></script>
+</head>
+<body id="page-top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="workshop-nav" aria-label="Workshop navigation">
+    <div class="nav-inner">
+      <a class="workshop-brand" href="#page-top"><span class="brand-long">{{ workshop.edition }}</span><span class="brand-short">Efficient Reasoning</span><span class="brand-conference">{{ workshop.conference }}</span></a>
+      <button class="menu-toggle" type="button" aria-controls="workshop-menu" aria-expanded="false">Menu <span aria-hidden="true">&#9776;</span></button>
+      <ul class="nav-links" id="workshop-menu">
+        <li><a href="#news">News</a></li>
+        <li><a href="#introduction">About</a></li>
+        <li><a href="#call">Call for Papers</a></li>
+        <li><a href="#dates">Key Dates</a></li>
+        <li><a href="#speaker">Invited Speakers</a></li>
+        <li><a href="#organization">Organizers</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#previous">Previous Editions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="workshop-hero">
+    <div class="container hero-content">
+      <p class="workshop-status">{{ workshop.status }}</p>
+      <p class="hero-conference">{{ workshop.conference }} Workshop on</p>
+      <h1>{{ workshop.title }}</h1>
+      <p class="hero-subtitle">{{ workshop.subtitle }}</p>
+      <p class="hero-details">{{ workshop.date }} <span aria-hidden="true">&middot;</span> {{ workshop.location }}</p>
+      <p class="hero-contact">{{ workshop.format }} <span aria-hidden="true">&middot;</span> Contact: {{ workshop.contact }}</p>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="news" class="workshop-section">
+      <div class="container">
+        <h2>News</h2>
+        <ul class="news-list">
+          {% for item in workshop.news %}<li>{{ item | escape }}</li>{% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section id="introduction" class="workshop-section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="overview">
+          {% for paragraph in workshop.about %}<p>{{ paragraph | escape }}</p>{% endfor %}
+        </div>
+        {% if workshop.driving_questions.size > 0 %}
+          <h3>Driving Questions</h3>
+          <div class="research-grid">
+            {% for question in workshop.driving_questions %}
+              <article class="research-card">
+                <h4>{{ question.title | escape }}</h4>
+                <p>{{ question.description | escape }}</p>
+              </article>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </section>
+
+    <section id="call" class="workshop-section">
+      <div class="container">
+        <h2>Call for Papers</h2>
+        <p>{{ workshop.call_intro | escape }}</p>
+        <h3>Technical Scope</h3>
+        {% if workshop.scope.size > 0 %}
+          <ul class="scope-list">{% for topic in workshop.scope %}<li><strong>{{ topic.title | escape }}.</strong> {{ topic.description | escape }}</li>{% endfor %}</ul>
+        {% else %}
+          <p>Research topics: <span class="tbd">TBD</span></p>
+        {% endif %}
+        <h3>Submission Guidelines</h3>
+        <dl class="submission-guidelines">
+          {% for guideline in workshop.submission_guidelines %}
+            <div><dt>{{ guideline.title | escape }}</dt><dd>{{ guideline.description | escape }}</dd></div>
+          {% endfor %}
+        </dl>
+      </div>
+    </section>
+
+    <section id="dates" class="workshop-section">
+      <div class="container">
+        <h2>Key Dates</h2>
+        <p class="dates-note">{{ workshop.dates_note | escape }} See the <a href="https://iclr.cc/Conferences/2027/CallForWorkshops">ICLR 2027 workshop timeline</a>.</p>
+        <table class="dates-table">
+          <caption>Workshop dates and location</caption>
+          <tbody>
+            {% for date in workshop.dates %}<tr><th scope="row">{{ date.title | escape }}</th><td><span class="tbd">{{ date.value | escape }}</span></td></tr>{% endfor %}
+          </tbody>
+        </table>
+        <h3 id="schedule">Tentative Schedule</h3>
+        <p>{{ workshop.schedule_intro | escape }}</p>
+        <div class="schedule-list">
+          {% for session in workshop.schedule %}
+            <article class="schedule-session">
+              <p class="session-time">{{ session.time | escape }}</p>
+              <div><h4>{{ session.title | escape }}</h4><p>{{ session.description | escape }}</p></div>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="workshop-section">
+      <div class="container">
+        <h2>Community &amp; Participation</h2>
+        <p>{{ workshop.community | escape }}</p>
+      </div>
+    </section>
+
+    <section id="speaker" class="workshop-section shaded-section">
+      <div class="container">
+        <h2>Invited Speakers</h2>
+        <div class="people-placeholder">
+          <div class="placeholder-avatar" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="22" r="10"/><path d="M14 53c0-12 8-19 18-19s18 7 18 19"/></svg>
+          </div>
+          <p>{{ workshop.speakers_status | escape }}</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="organization" class="workshop-section">
+      <div class="container">
+        <h2>Workshop Organizers</h2>
+        <div class="people-placeholder">
+          <div class="placeholder-avatar" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="22" r="10"/><path d="M14 53c0-12 8-19 18-19s18 7 18 19"/></svg>
+          </div>
+          <p>{{ workshop.organizers_status | escape }}</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors" class="workshop-section">
+      <div class="container">
+        <h2>Sponsors</h2>
+        <p class="pending-note">{{ workshop.sponsors_status | escape }}</p>
+      </div>
+    </section>
+
+    <section id="previous" class="workshop-section shaded-section">
+      <div class="container">
+        <h2>Previous Editions</h2>
+        <article class="previous-edition">
+          <p class="edition-venue">COLM 2026</p>
+          <h3><a href="https://wdlctc.github.io/efficient-reasoning-2026/">Efficient Reasoning, COLM 2026 <span aria-hidden="true">&rarr;</span></a></h3>
+        </article>
+        <article class="previous-edition">
+          <p class="edition-venue">NeurIPS 2025</p>
+          <h3><a href="https://efficient-reasoning.github.io/">The First Workshop on Efficient Reasoning <span aria-hidden="true">&rarr;</span></a></h3>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="workshop-footer">
+    <div class="container">
+      <p>Efficient Reasoning &middot; {{ workshop.conference }}</p>
+      <a href="{{ '/workshop/' | relative_url }}">&larr; All workshops</a>
+      <a href="{{ '/' | relative_url }}">Xinnan Dai's Homepage</a>
+    </div>
+  </footer>
+</body>
+</html>

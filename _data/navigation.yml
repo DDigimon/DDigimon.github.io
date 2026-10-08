@@ -14,6 +14,10 @@ main:
         
   - title: "Blog Posts"
     url: /year-archive/
+
+  - title: "Workshop Organizing"
+    url: /workshop/
+    children: workshops
     
   # - title: "CV"
   #   url: /cv/

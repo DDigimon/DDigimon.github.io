@@ -1,0 +1,23 @@
+---
+layout: archive
+title: "Workshop Organizing"
+permalink: /workshop/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="workshop-directory">
+  {% for workshop in site.data.workshops %}
+    {% if workshop.url contains 'http' %}
+      {% assign workshop_domain = '' %}
+    {% else %}
+      {% assign workshop_domain = base_path %}
+    {% endif %}
+    <article class="workshop-directory__item">
+      <p class="workshop-directory__venue">{{ workshop.venue }}</p>
+      <h2><a href="{{ workshop_domain }}{{ workshop.url }}">{{ workshop.title }}</a></h2>
+      <p><a href="{{ workshop_domain }}{{ workshop.url }}">Visit workshop website <span aria-hidden="true">&rarr;</span></a></p>
+    </article>
+  {% endfor %}
+</div>

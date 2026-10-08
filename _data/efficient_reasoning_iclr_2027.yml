@@ -1,0 +1,103 @@
+# Adapted from the ICLR 2027 workshop proposal (main.tex).
+# Proposal-only notes and unconfirmed names are omitted from the public-facing copy.
+title: "Efficient Reasoning"
+edition: "The Third Workshop on Efficient Reasoning"
+conference: "ICLR 2027"
+status: "Proposed workshop"
+subtitle: "From Model Design to Agent Applications"
+tagline: "Making large reasoning models faster, cheaper, and more efficient."
+date: "April 29 or 30, 2027 (tentative)"
+location: "San Francisco, CA · Venue TBD"
+format: "In person · Online materials planned"
+contact: "TBD"
+
+news:
+  - "We are preparing the third edition of the Efficient Reasoning workshop, proposed for ICLR 2027. The final workshop date, submission portal, and program will be announced here."
+
+about:
+  - "Reasoning is expanding beyond text benchmarks into multimodal, spatial, and embodied settings. Models and agents must interpret long contexts, understand visual scenes, plan actions, use tools, and interact with changing environments, while meeting practical constraints on latency, memory, throughput, and serving cost. Yet stronger reasoning often depends on more test-time computation, longer trajectories, or deeper internal computation."
+  - "Meeting these challenges requires progress across the full pipeline, from model design to agent applications. Recurrent and latent architectures, reasoning-trace compression, reinforcement learning, adaptive model and budget selection, and KV-cache compression offer complementary routes to efficiency. In agent systems, these advances must work together with memory, tool use, and environment interaction: a cheaper model call is only useful if it also helps reduce the total cost of completing a task reliably."
+  - "The proposed third workshop brings together researchers and practitioners working on architectures, algorithms, training data, agent systems, evaluation, safety, and applications. Building on the NeurIPS 2025 and COLM 2026 editions, we aim to connect these perspectives and understand how capable reasoning models and agents can operate efficiently, robustly, and at scale under computational, memory, and interaction constraints."
+
+driving_questions:
+  - title: "When is additional computation worth its cost?"
+    description: "How can a model estimate the value of further reasoning, sampling, or verification? We seek policies that adapt to task difficulty, uncertainty, and available budgets, including the overhead of routing and auxiliary decision models."
+  - title: "What is the right representation for efficient reasoning?"
+    description: "Natural-language traces, recurrent or latent computation, and executable tools offer different trade-offs in cost, supervision, and control. Which representations support which reasoning operations, and when should a system switch between them?"
+  - title: "What information must be preserved for reliable reasoning?"
+    description: "Compression can remove evidence, constraints, or intermediate conclusions needed later. How can reasoning-trace distillation, context compression, and agent memory retain decision-critical information and avoid delayed errors or repeated retrieval?"
+  - title: "What training signals enable transferable reasoning efficiency?"
+    description: "Demonstrations, process feedback, failed attempts, and recovery trajectories shape how models allocate effort. Which signals teach reusable strategies that remain effective on unfamiliar tasks and under tighter computational budgets?"
+  - title: "How can agents minimize the total cost of successful task completion?"
+    description: "An agent's cost includes reasoning, memory updates, tool calls, communication, and interaction with its environment. How can these decisions be optimized together while accounting for failures, retries, and expensive recovery?"
+  - title: "How should reasoning efficiency be measured and compared?"
+    description: "Tokens, compute, latency, memory, energy, and monetary cost capture different trade-offs. Evaluations should consider full task trajectories, realistic workloads, variation across runs, tail latency, and the training or infrastructure costs behind inference-time savings."
+  - title: "How can efficiency improve while preserving robustness and safety?"
+    description: "Compression, quantization, distillation, and budget limits can affect uncertainty, error detection, and alignment. We ask when systems should reason further, seek evidence, abstain, or request human oversight, particularly under distribution shifts."
+
+call_intro: "The proposed Third Workshop on Efficient Reasoning at ICLR 2027 welcomes research on the design, training, evaluation, and deployment of resource-efficient reasoning models and agent systems. We encourage contributions that connect improvements in individual models with the quality, cost, and reliability of complete reasoning and agent workflows."
+scope:
+  - title: "Architectures"
+    description: "Recurrent and latent-space reasoning, hybrid explicit–implicit computation, adaptive depth, and sparse or conditional computation. Topics include reasoning capacity, generalization to harder tasks, memory requirements, and hardware efficiency."
+  - title: "Algorithms"
+    description: "Compute-aware optimization, adaptive budgets, early stopping, model routing, search, speculative decoding, and selective verification. We welcome methods for estimating the marginal value of computation and distributing resources across reasoning, exploration, and verification."
+  - title: "Training Data"
+    description: "Synthetic data, reasoning-trace distillation, process supervision, and trajectories involving tools, errors, and recovery. Relevant work preserves decision-critical information, improves data efficiency, and generalizes across domains and computational budgets."
+  - title: "Agent Systems"
+    description: "Planning, tool selection, retrieval, memory management, context compression, caching, and multi-agent coordination over long horizons. We emphasize joint management of model computation, communication, and environment interaction to reduce redundant work and execution failures."
+  - title: "Evaluation"
+    description: "Benchmarks and protocols for quality–resource trade-offs across compute, latency, memory, energy, and reliability. We encourage complete task trajectories, including tool calls and retries, controlled budgets, multiple runs, realistic workloads, and out-of-distribution evaluation."
+  - title: "Safety"
+    description: "The effects of compression, distillation, quantization, and early stopping on alignment, uncertainty calibration, and error detection. Topics include reliable abstention, adversarial manipulation of reasoning budgets or agent memory, and monitoring latent reasoning."
+  - title: "Applications"
+    description: "Coding agents, scientific discovery, healthcare, autonomous driving, robotics, and interactive multimodal systems. We welcome studies of real-time response, limited hardware, partial observability, and domain-specific reliability requirements."
+
+submission_guidelines:
+  - title: "Paper format and page limit"
+    description: "Single PDF using the ICLR LaTeX template, with 4–10 pages of main text, excluding references."
+  - title: "Submission portal"
+    description: "OpenReview. The workshop submission link will be announced."
+  - title: "Review process"
+    description: "Double-blind review. Submissions and supplementary materials should be anonymized; conflicts of interest will be handled through recusal and reassignment."
+  - title: "Publication policy"
+    description: "Workshop papers will be non-archival. Accepted papers will be publicly available on OpenReview."
+  - title: "Presentation"
+    description: "Accepted papers will be presented as posters, with three selected for contributed talks in the tentative program."
+  - title: "Dual-submission policy"
+    description: "TBD — The final policy will be announced with the submission portal."
+
+dates_note: "These dates reflect the proposal and the ICLR 2027 workshop timeline. The workshop date and final submission arrangements remain subject to confirmation."
+
+dates:
+  - title: "Submission Deadline"
+    value: "February 1, 2027 (tentative)"
+  - title: "Notification of Acceptance"
+    value: "February 26, 2027, 11:59 p.m. AoE"
+  - title: "Camera-ready Deadline"
+    value: "TBD"
+  - title: "Opening and Closing Times Announced"
+    value: "March 26, 2027"
+  - title: "Full Program Finalized"
+    value: "April 14, 2027"
+  - title: "Workshop Day"
+    value: "April 29 or 30, 2027 (assignment TBD)"
+  - title: "Location"
+    value: "San Francisco, CA · Venue TBD"
+
+schedule_intro: "The tentative full-day program includes eight invited talks, three contributed talks, two poster sessions, and one panel discussion. Exact timing, speakers, and the final program will be announced."
+schedule:
+  - time: "09:00–12:00"
+    title: "Morning Session"
+    description: "Opening remarks, four invited talks, one contributed talk, a poster session, and a coffee break."
+  - time: "12:00–13:00"
+    title: "Lunch Break"
+    description: "Time for informal discussion and community exchange."
+  - time: "13:00–17:00"
+    title: "Afternoon Session"
+    description: "Four invited talks, two contributed talks, a second poster session, a panel discussion with audience Q&A, a coffee break, and closing remarks."
+
+community: "We aim to create an inclusive forum for students, early-career researchers, and participants across regions, affiliations, and research areas. Contributed talks, poster sessions, and discussion-oriented programming will provide opportunities to exchange feedback and build connections. Subject to available sponsorship, we plan to prioritize attendance support for junior researchers and explore reviewer mentorship. Online access to workshop materials is planned."
+
+speakers_status: "TBD — Invited speakers will be announced."
+organizers_status: "TBD — Workshop organizers will be announced."
+sponsors_status: "TBD — Sponsors will be announced."
