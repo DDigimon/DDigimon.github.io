@@ -1,0 +1,22 @@
+.homepage-news {
+  max-height: 18em;
+  margin-bottom: $indent-var;
+  padding-right: 1em;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+
+  &:focus-visible {
+    outline: 2px solid $link-color;
+    outline-offset: 4px;
+  }
+}
+
+.homepage-news__items {
+  display: flow-root;
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}

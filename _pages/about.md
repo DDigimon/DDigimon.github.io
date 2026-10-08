@@ -3,6 +3,7 @@ permalink: /
 title: "Aount me"
 excerpt: "About me"
 author_profile: true
+scroll_news: true
 redirect_from: 
   - /about/
   - /about.html
@@ -17,6 +18,9 @@ contact: daixinna[at]msu[dot]edu
 
 News
 ======
+<div class="homepage-news" tabindex="0" role="region" aria-label="News" data-visible-items="3">
+<div class="homepage-news__items" markdown="1">
+
 [May. 2026] Our paper [Beyond Sequences: How Graph Learning Can Advance Trustworthy Large Language Models](https://github.com/Graph-COM/Awesome-Graph4TruthLLM) is online.
 
 [May. 2026] Our paper [Why Retrieval-Augmented Generation Fails: A Graph Perspective](https://arxiv.org/abs/2605.14192) got accepted by KDD 2026
@@ -48,6 +52,9 @@ News
 [Aug. 2024] Our paper [AI-powered omics-based drug pair discovery for pyroptosis therapy targeting triple-negative breast cancer](https://www.nature.com/articles/s41467-024-51980-9) got accepted by Nature Communications.
 
 [Jan. 2024] We got Accelerate Foundation Models Academic Research Initiative (AFMR) funding from Microsoft Research.
+
+</div>
+</div>
 
 <!-- Selected Publication [view all](https://scholar.google.com.hk/citations?user=LGKDd2AAAAAJ&hl=zh-CN)
 ======
