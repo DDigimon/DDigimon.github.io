@@ -1,6 +1,6 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 {% if page.scroll_news %}
-<script src="{{ base_path }}/assets/js/homepage-news.js"></script>
+<script src="{{ base_path }}/assets/js/homepage-news.js?v={{ site.time | date: '%s' }}"></script>
 {% endif %}
 
 {% include analytics.html %}

@@ -18,7 +18,8 @@ contact: daixinna[at]msu[dot]edu
 
 News
 ======
-<div class="homepage-news" tabindex="0" role="region" aria-label="News" data-visible-items="3">
+<div class="homepage-news-panel">
+<div class="homepage-news" id="homepage-news" tabindex="0" role="region" aria-label="News" aria-describedby="news-scroll-hint" data-visible-items="3">
 <div class="homepage-news__items" markdown="1">
 
 [May. 2026] Our paper [Beyond Sequences: How Graph Learning Can Advance Trustworthy Large Language Models](https://github.com/Graph-COM/Awesome-Graph4TruthLLM) is online.
@@ -55,6 +56,9 @@ News
 
 </div>
 </div>
+<div class="homepage-news__scrollbar" role="scrollbar" aria-label="Scroll News" aria-controls="homepage-news" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"><div class="homepage-news__thumb"></div></div>
+</div>
+<p class="homepage-news__hint" id="news-scroll-hint">Scroll inside News or drag the bar for earlier updates ↓</p>
 
 <!-- Selected Publication [view all](https://scholar.google.com.hk/citations?user=LGKDd2AAAAAJ&hl=zh-CN)
 ======
