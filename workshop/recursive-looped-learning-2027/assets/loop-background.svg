@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 740" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1800" y2="740" gradientUnits="userSpaceOnUse"><stop stop-color="#142535"/><stop offset=".52" stop-color="#1c3149"/><stop offset="1" stop-color="#182838"/></linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="120" x2="1750" y2="660" gradientUnits="userSpaceOnUse"><stop stop-color="#679ac3" stop-opacity=".65"/><stop offset=".35" stop-color="#5886b7" stop-opacity=".1"/><stop offset=".65" stop-color="#5f91be" stop-opacity=".14"/><stop offset="1" stop-color="#8cb4cd" stop-opacity=".65"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#2c5a7b" stop-opacity=".45"/><stop offset="1" stop-color="#142535" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" stroke="#a4cce2" stroke-opacity=".045" stroke-width=".7"/></pattern>
+    <path id="loop" d="M-120 424C10 124 222 114 396 266C570 418 596 626 776 570C956 514 1062 100 1278 125C1494 150 1616 474 1910 274"/>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1800v740H0z"/>
+  <ellipse cx="350" cy="290" rx="640" ry="530" fill="url(#light)"/>
+  <ellipse cx="1550" cy="470" rx="550" ry="500" fill="url(#light)"/>
+  <path fill="url(#grid)" d="M0 0h1800v740H0z"/>
+  <g stroke="url(#ribbon)" stroke-width="1.1">
+    <use href="#loop" transform="translate(0 -98)"/><use href="#loop" transform="translate(0 -84)"/><use href="#loop" transform="translate(0 -70)"/><use href="#loop" transform="translate(0 -56)"/><use href="#loop" transform="translate(0 -42)"/><use href="#loop" transform="translate(0 -28)"/><use href="#loop" transform="translate(0 -14)"/><use href="#loop"/><use href="#loop" transform="translate(0 14)"/><use href="#loop" transform="translate(0 28)"/><use href="#loop" transform="translate(0 42)"/><use href="#loop" transform="translate(0 56)"/><use href="#loop" transform="translate(0 70)"/><use href="#loop" transform="translate(0 84)"/><use href="#loop" transform="translate(0 98)"/>
+  </g>
+  <g stroke="#91b9d3" stroke-opacity=".22" stroke-width="1">
+    <ellipse cx="-82" cy="394" rx="365" ry="228" transform="rotate(-34 -82 394)"/>
+    <ellipse cx="-82" cy="394" rx="380" ry="240" transform="rotate(-34 -82 394)"/>
+    <ellipse cx="-82" cy="394" rx="395" ry="252" transform="rotate(-34 -82 394)"/>
+    <ellipse cx="1845" cy="314" rx="365" ry="228" transform="rotate(-34 1845 314)"/>
+    <ellipse cx="1845" cy="314" rx="380" ry="240" transform="rotate(-34 1845 314)"/>
+    <ellipse cx="1845" cy="314" rx="395" ry="252" transform="rotate(-34 1845 314)"/>
+  </g>
+  <g fill="#acd7ed" opacity=".5"><circle cx="221" cy="214" r="3"/><circle cx="1456" cy="376" r="3"/><circle cx="1632" cy="544" r="2.5"/></g>
+</svg>
