@@ -128,6 +128,7 @@ table{width:100%;border-collapse:collapse;text-align:left}
 .organizer .affiliation{min-height:42px;margin-bottom:4px}
 .talk-title{font-size:12px;color:#8b97a3;margin-top:13px;margin-bottom:0;font-style:italic}
 .person-email{font-size:11px;line-height:1.6}
+.person-profile{font-size:12px;line-height:1.6}
 .person-bio{font-size:12px;color:#6b7b8b;margin-top:6px;line-height:1.6}
 .person-bio summary{font-size:11px;list-style:none;display:inline-block;color:#72869b}
 .person-bio summary::-webkit-details-marker{display:none}
