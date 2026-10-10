@@ -1,7 +1,7 @@
 ---
 layout: null
 title: "Efficient Reasoning, ICLR 2027"
-description: "The proposed Third Workshop on Efficient Reasoning at ICLR 2027: from model design to agent applications."
+description: "The proposed Third Workshop on Efficient Reasoning at ICLR 2027: architectures, learning, and agent systems."
 permalink: /workshop/efficient-reasoning-iclr-2027/
 ---
 {% assign workshop = site.data.efficient_reasoning_iclr_2027 %}
@@ -14,7 +14,7 @@ permalink: /workshop/efficient-reasoning-iclr-2027/
   <meta name="theme-color" content="#14283c">
   <title>{{ page.title }} | Workshop</title>
   <link rel="canonical" href="{{ page.url | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/efficient-reasoning-workshop.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/efficient-reasoning-workshop.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <script defer src="{{ '/assets/js/efficient-reasoning-workshop.js' | relative_url }}"></script>
 </head>
 <body id="page-top">
@@ -43,7 +43,7 @@ permalink: /workshop/efficient-reasoning-iclr-2027/
       <h1>{{ workshop.title }}</h1>
       <p class="hero-subtitle">{{ workshop.subtitle }}</p>
       <p class="hero-details">{{ workshop.date }} <span aria-hidden="true">&middot;</span> {{ workshop.location }}</p>
-      <p class="hero-contact">{{ workshop.format }} <span aria-hidden="true">&middot;</span> Contact: {{ workshop.contact }}</p>
+      <p class="hero-contact">{{ workshop.format }} <span aria-hidden="true">&middot;</span> <a href="#contact">Contact the organizers</a></p>
     </div>
   </header>
 
@@ -60,6 +60,8 @@ permalink: /workshop/efficient-reasoning-iclr-2027/
     <section id="introduction" class="workshop-section">
       <div class="container">
         <h2>About</h2>
+        <p class="section-lead">{{ workshop.intro_heading | escape }}</p>
+        <p>{{ workshop.tagline | escape }}</p>
         <div class="overview">
           {% for paragraph in workshop.about %}<p>{{ paragraph | escape }}</p>{% endfor %}
         </div>
@@ -122,18 +124,23 @@ permalink: /workshop/efficient-reasoning-iclr-2027/
     <section id="community" class="workshop-section">
       <div class="container">
         <h2>Community &amp; Participation</h2>
-        <p>{{ workshop.community | escape }}</p>
+        {% for paragraph in workshop.community %}<p>{{ paragraph | escape }}</p>{% endfor %}
       </div>
     </section>
 
     <section id="speaker" class="workshop-section shaded-section">
       <div class="container">
         <h2>Invited Speakers</h2>
-        <div class="people-placeholder">
-          <div class="placeholder-avatar" aria-hidden="true">
-            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="22" r="10"/><path d="M14 53c0-12 8-19 18-19s18 7 18 19"/></svg>
-          </div>
-          <p>{{ workshop.speakers_status | escape }}</p>
+        <p>{{ workshop.speakers_intro | escape }}</p>
+        <div class="people-grid speakers-grid">
+          {% for speaker in workshop.speakers %}
+            <article class="person-card">
+              <img class="person-photo" src="{{ speaker.image | relative_url }}" alt="{{ speaker.name | escape }}" width="128" height="128" loading="lazy" decoding="async">
+              <h3><a href="{{ speaker.url | escape }}">{{ speaker.name | escape }}</a></h3>
+              <p class="person-affiliation">{{ speaker.affiliation | escape }}</p>
+              <p class="person-topic">{{ speaker.topic | escape }}</p>
+            </article>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -141,11 +148,27 @@ permalink: /workshop/efficient-reasoning-iclr-2027/
     <section id="organization" class="workshop-section">
       <div class="container">
         <h2>Workshop Organizers</h2>
-        <div class="people-placeholder">
-          <div class="placeholder-avatar" aria-hidden="true">
-            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="22" r="10"/><path d="M14 53c0-12 8-19 18-19s18 7 18 19"/></svg>
-          </div>
-          <p>{{ workshop.organizers_status | escape }}</p>
+        <div class="people-grid organizers-grid">
+          {% for organizer in workshop.organizers %}
+            <article class="person-card">
+              <img class="person-photo" src="{{ organizer.image | relative_url }}" alt="{{ organizer.name | escape }}" width="128" height="128" loading="lazy" decoding="async">
+              <h3><a href="{{ organizer.url | escape }}">{{ organizer.name | escape }}</a></h3>
+              <p class="person-affiliation">{{ organizer.affiliation | escape }}</p>
+              <details class="person-bio">
+                <summary>Biography<span class="visually-hidden"> of {{ organizer.name | escape }}</span></summary>
+                <p>{{ organizer.bio | escape }}</p>
+                {% for email in organizer.emails %}<a class="person-email" href="mailto:{{ email | escape }}">{{ email | escape }}</a>{% endfor %}
+              </details>
+            </article>
+          {% endfor %}
+        </div>
+        <h3>Program Committee</h3>
+        <p>{{ workshop.committee_intro | escape }}</p>
+        <ul class="committee-list">{% for member in workshop.committee %}<li>{{ member | escape }}</li>{% endfor %}</ul>
+        <div id="contact" class="contact-block">
+          <h3>Contact</h3>
+          <p>For workshop enquiries, please contact:</p>
+          <ul class="contact-list">{% for contact in workshop.contacts %}<li><strong>{{ contact.name | escape }}</strong><a href="mailto:{{ contact.email | escape }}">{{ contact.email | escape }}</a></li>{% endfor %}</ul>
         </div>
       </div>
     </section>
@@ -160,14 +183,14 @@ permalink: /workshop/efficient-reasoning-iclr-2027/
     <section id="previous" class="workshop-section shaded-section">
       <div class="container">
         <h2>Previous Editions</h2>
-        <article class="previous-edition">
-          <p class="edition-venue">COLM 2026</p>
-          <h3><a href="https://wdlctc.github.io/efficient-reasoning-2026/">Efficient Reasoning, COLM 2026 <span aria-hidden="true">&rarr;</span></a></h3>
-        </article>
-        <article class="previous-edition">
-          <p class="edition-venue">NeurIPS 2025</p>
-          <h3><a href="https://efficient-reasoning.github.io/">The First Workshop on Efficient Reasoning <span aria-hidden="true">&rarr;</span></a></h3>
-        </article>
+        {% for edition in workshop.previous_editions %}
+          <article class="previous-edition">
+            <p class="edition-venue">{{ edition.venue | escape }}</p>
+            <h3><a href="{{ edition.url | escape }}">{{ edition.title | escape }} <span aria-hidden="true">&rarr;</span></a></h3>
+            <p>{{ edition.description | escape }}</p>
+          </article>
+        {% endfor %}
+        <p class="companion-edition">{{ workshop.companion_edition | escape }}</p>
       </div>
     </section>
   </main>
