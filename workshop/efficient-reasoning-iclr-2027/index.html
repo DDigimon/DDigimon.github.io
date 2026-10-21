@@ -164,7 +164,11 @@ permalink: /workshop/efficient-reasoning-iclr-2027/
         </div>
         <h3>Program Committee</h3>
         <p>{{ workshop.committee_intro | escape }}</p>
-        <ul class="committee-list">{% for member in workshop.committee %}<li>{{ member | escape }}</li>{% endfor %}</ul>
+        <ul class="committee-list">
+          {% for member in workshop.committee %}
+            <li>{% if member.url %}<a href="{{ member.url | escape }}">{{ member.name | escape }}</a>{% else %}{{ member | escape }}{% endif %}</li>
+          {% endfor %}
+        </ul>
         <div id="contact" class="contact-block">
           <h3>Contact</h3>
           <p>For workshop enquiries, please contact:</p>

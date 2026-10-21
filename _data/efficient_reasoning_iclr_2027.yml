@@ -211,6 +211,8 @@ committee:
   - "Eric Jiang"
   - "Jiansu Zhang"
   - "Yaxin Li"
+  - name: "Bing Liu"
+    url: "https://bingliu.me/"
 
 contacts:
   - name: "Xinnan Dai"
