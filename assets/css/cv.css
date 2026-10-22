@@ -1,0 +1,7 @@
+.cv-updated { color: #626e78; font-size: 0.85em; }
+.cv-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+.archive .cv-actions a { margin: 0; text-decoration: none; }
+.cv-preview { width: 100%; }
+.cv-page { display: block; margin-bottom: 24px; border: 1px solid #e2e6e9; border-radius: 4px; overflow: hidden; background: #fff; }
+.cv-page:last-child { margin-bottom: 0; }
+.cv-page img { display: block; width: 100%; height: auto; }

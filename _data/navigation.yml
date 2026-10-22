@@ -19,8 +19,8 @@ main:
     url: /workshop/
     children: workshops
     
-  # - title: "CV"
-  #   url: /cv/
+  - title: "CV"
+    url: /cv/
     
   # - title: "Guide"
   #   url: /markdown/
