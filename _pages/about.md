@@ -22,6 +22,8 @@ News
 <div class="homepage-news" id="homepage-news" tabindex="0" role="region" aria-label="News" aria-describedby="news-scroll-hint" data-visible-items="3">
 <div class="homepage-news__items" markdown="1">
 
+[Oct. 2026] We're holding the [Efficient Reasoning Workshop](https://wdlctc.github.io/efficient-reasoning-2026/) at COLM 2026.
+
 [May. 2026] Our paper [Beyond Sequences: How Graph Learning Can Advance Trustworthy Large Language Models](https://github.com/Graph-COM/Awesome-Graph4TruthLLM) is online.
 
 [May. 2026] Our paper [Why Retrieval-Augmented Generation Fails: A Graph Perspective](https://arxiv.org/abs/2605.14192) got accepted by KDD 2026
